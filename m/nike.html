@@ -6,30 +6,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="nike css.css">
-    <link rel="stylesheet" href="nike js.js">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="nike css (1).css">
+    <!-- <link rel="stylesheet" href="nike.js"> -->
     <title>nike store</title>
 </head>
 <body>
   <nav>
     <div class="navtop">
-        <img src="Downloads/sneakers.png" alt="logo">
+        <img src="sneakers.png" alt="logo">
     </div>
     <div class="navitem">
         <div class="search"></div>
         <input type="text"  placeholder="search" class="searchInput">
-    <img src="Downloads/search.png" alt="" width="20" height="20" class="search">
+    <img src="search.png" alt="" width="20" height="20" class="search">
     </div>
     <div class="limitedOffer">
 <span >limetted Offer</span>
 </div>
 
     <div class="navbottom">
-      <h3 class="menuiten" onclick="chang('AIR FORCE', 'Downloads/air.png', '199$', '#008000')">AIR FORCE</h3>
-      <h3 class="menuiten" onclick="chang('JORDAN', 'Downloads/jordan.png', '220$', '#012000')">JORDAN</h3>
-      <h3 class="menuiten" onclick="chang('BLAZER', 'Downloads/blazer.png', '150$', '#ffe4e1')">BLAZER</h3>
-      <h3 class="menuiten" onclick="chang('CRATER', 'Downloads/Crater.png', '180$', '#fafad2')">CRATER</h3>
-      <h3 class="menuiten" onclick="chang('HIPPIE', 'Downloads/hippie.png', '210$', '#e6e6fa')">HIPPIE</h3>
+      <h3 class="menuiten" onclick="chang('AIR FORCE', 'air.png', '199$', '#008000')">AIR FORCE</h3>
+      <h3 class="menuiten" onclick="chang('JORDAN', 'jordan.png', '220$', '#012000')">JORDAN</h3>
+      <h3 class="menuiten" onclick="chang('BLAZER', 'blazer2.png', '150$', '#ffe4e1')">BLAZER</h3>
+      <h3 class="menuiten" onclick="chang('CRATER', 'crater.png', '180$', '#fafad2')">CRATER</h3>
+      <h3 class="menuiten" onclick="chang('HIPPIE', 'hippie.png', '210$', '#e6e6fa')">HIPPIE</h3>
   </div>
   </nav>
   <div class="A"> 
@@ -37,11 +39,12 @@
  
  <div class="d">
     <h6 class="c3" id="shoeName"> 
+
     AIR FORCE <br>
       NEW <br>
     SEASON</h6>
    
-<img  src="Downloads/air.png "alt ="" width="50%" class="c4" id="shoesImage">
+<img  src="air.png"alt ="" width="50%" class="c4" id="shoesImage">
 <h5 class="c6" id="shoePrice">199$</h5>
 <button class="m">BUY NOW!</button>
 </div>
@@ -89,29 +92,29 @@
 </html> -->
 <div class="features">
   <div class="feature">
-      <img src="Downloads/shipping.png" alt="" class="featureIcon" width="50px">
+      <img src="shipping.png" alt="" class="featureIcon" width="50px">
       <span class="featureTitle">FREE SHIPPING</span>
       <span class="featureDesc">Free worldwide shipping on all orders.</span>
   </div>
   <div class="feature">
-      <img class="featureIcon" src="Downloads/return.png" alt="" width="50px">
+      <img class="featureIcon" src="return.png" alt="" width="50px">
       <span class="featureTitle">30 DAYS RETURN</span>
       <span class="featureDesc">No question return and easy refund in 14 days.</span>
   </div>
   <div class="feature">
-      <img class="featureIcon" src="Downloads/gift.png" alt="" width="50px">
+      <img class="featureIcon" src="gift.png" alt="" width="50px">
       <span class="featureTitle">GIFT CARDS</span>
       <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
   </div>
   <div class="feature">
-      <img class="featureIcon" src="Downloads/contact.png" alt="" width="50px">
+      <img class="featureIcon" src="contact.png" alt="" width="50px">
       <span class="featureTitle">CONTACT US!</span>
       <span class="featureDesc">Keep in touch via email and support system.</span>
   </div>
 </div>
 
 <div id="A">
-  <div id="c1">  <img src="Downloads/air.png" alt="" id="c3">
+  <div id="c1">  <img src="air.png" alt="" id="c3">
     <div id="c2">
     
       <h4>AIR JORDAN</h4>
@@ -119,7 +122,7 @@
       <p id="c4"> Air Jordan one of the best shoes in the 20's</p>
       <div class="colors">
         <div class="color" id="buttonblack"
-           onclick="changeimg('Downloads/air.png')">
+           onclick="changeimg('air.png')">
 
          </div>
 
@@ -127,7 +130,7 @@
           
        
         <div class="color" id="butombleu"
-           onclick="changeimg('Downloads/air2.png')">
+           onclick="changeimg('air2.png')">
         </div>
     </div>
       <div id="c5">
@@ -242,7 +245,9 @@
 </div>
 
 </div>
+
 <script>
+  
 function changeimg(filename){
   let img =document.querySelector('#c3')
   img.setAttribute('src',filename)
@@ -252,14 +257,14 @@ function changeimg(filename){
 //   img.setAttribute('src',filename)
 // }
 function chang(name, imgSrc, price,bgColor) {
-            // Change the shoe name
+            
             document.getElementById('shoeName').innerHTML = `${name} <br> NEW <br> SEASON`;
 
-            // Change the shoe image
+           
             let img = document.querySelector('.c4');
             img.setAttribute('src', imgSrc);
 
-            // Change the shoe price
+           
             document.getElementById('shoePrice').textContent = price;
 
 
@@ -272,5 +277,5 @@ function chang(name, imgSrc, price,bgColor) {
             priceElement.style.color = priceColor;
         }
 
-</script>   
-<!--     ccxjhjx -->
+
+</script>

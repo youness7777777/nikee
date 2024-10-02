@@ -126,7 +126,7 @@
 }
 .A{
   display: flex;
-  background-image: url('Downloads/nordwood-themes-9a58YsGiTPk-unsplash.jpg') ;
+  background-image: url('nordwood-themes-9a58YsGiTPk-unsplash.jpg');
     clip-path: polygon(0 1%, 100% 0, 100% 100%, 0 80%);
 
 }
@@ -163,18 +163,19 @@ align-items: center;
  .c3{
     position: relative;
     top: -160px;
-    left: 970PX;
+    left: 1100PX;
   
 }
 .c4{
    position: relative;
     top: 28px;
     left: 94px;
+
    
 }
 
 .c4{
-  /* background-color: green; */
+  background-color: green;
   clip-path: circle();
   z-index: 1;
 
@@ -232,13 +233,12 @@ h4{
 #v{
 font-weight: bold;
 }
-/* #c4{
+/* /* #c4{
 
     /* font-family: "Oswald", system-ui;
     font-optical-sizing: auto;
     /* font-weight: 200; */
     /* font-style: normal; */
-   
 
 #l{
   width: 70px;
@@ -407,4 +407,44 @@ color: white;
 .maroc{
  color: black;
   background-color: black;
+}
+.payments{
+  width: 500px;
+  height: 500px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right:0;
+  margin: auto;
+  display: flex;
+  flex-direction: column; 
+  padding: 10px 5px;
+  z-index: 1;
+  box-shadow: 10px 16px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 16px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 16px 5px 0px rgba(0,0,0,0.75);
+}
+ 
+
+body {
+  font-size: 16px;
+}
+
+@media (min-width: 600px) {
+  body {
+      font-size: 18px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  body {
+      font-size: 20px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
